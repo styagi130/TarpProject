@@ -1,0 +1,121 @@
+<!doctype html>
+{% load staticfiles %}
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href='/static/style.css'>
+<link rel="stylesheet" href='/static/style2.css'>
+<style>
+a:hover {
+    background-color: #6f0f02;
+	text-decoration:none
+}
+a:link {
+    text-decoration: none;
+}
+</style>
+</head>
+<body class="body">
+<div style="
+	background-color: #3399FF;
+	height:100%;
+	width:30%;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:1100px;
+	margin:auto;" >
+	<br><br><br>
+			<p style="text-align:center"><font color="#ffffff" size="8" face="verdana"> Smart </font></p>
+			<p style="text-align:center"><font color="#ffffff" size="8" face="verdana"> Dustbin </font></p>	<br><br><br>
+	<div class="select_list">
+			<p  style="text-align:right"><a href="#home""><font color="#ffffff" size="6" face="verdana"> About </font></a></p><br>
+			<p  style="text-align:right"><a href="#skills"><font color="#ffffff" size="6" face="verdana"> Composition </font></a></p><br>
+			<p style="text-align:right"><a href="#Projects"><font color="#ffffff" size="6" face="verdana"> Outreach </font></a></p><br>
+			<p style="text-align:right"><a href={% url 'login' %}><font color="#ffffff" size="6" face="verdana"> login
+			</font></a></p>
+	</div>
+</div>
+<img class="content" src="/static/home-office-336373_1280-1024x682.jpg" width="70%" height="680px">
+
+<!HOME PAGE>
+<div class="homeText" id="home">
+	<h1> 
+		<font color="white">About me</font>
+	</h1>
+</div>
+<div class="Home"><p>I am siddharth Tyagi </p></div>
+
+
+<!SKILLS CLASS>
+<div class="skill_content">
+	
+</div>
+<div class="text2" id="skills">
+	<h1> 
+		<font color="white">Composition</font>
+	</h1>
+</div>
+
+<div class="Skill_main">
+	<div class="text3"> 
+		<h3>
+			<font color="#3399ff" size="4">Polybags</font>
+		</h3>
+	</div>
+	<div class="container">
+		<div class="skills django">50%</div>
+	</div>
+	<div class="text_flask"> <h3><font color="#3399ff" size="4">Paperbags</font></h3></div>
+	<div class="container">
+		<div class="skills flask">17%</div>
+	</div>
+	<div class="text_html"> <h3><font color="#3399ff" size="4">Plastic containers</font></h3></div>
+	<div class="container">
+		<div class="skills HTML">12%</div>
+	</div>
+	<div class="text_css"> <h3><font color="#3399ff" size="4">Textile/Clothing</font></h3></div>
+	<div class="container">
+		<div class="skills CSS">5.1%</div>
+	</div>
+	<div class="text_sql"> <h3><font color="#3399ff" size="4">Manila ropes/bags</font></h3></div>
+	<div class="container">
+		<div class="skills sql">3%</div>
+	</div>
+	<div class="text_machine_learning"> <h3><font color="#3399ff" size="4">Food Waste</font></h3></div>
+	<div class="container">
+		<div class="skills machine_learning">6%</div>
+	</div>
+	<div class="text_illus"> <h3><font color="#3399ff" size="4">Rubber/Glass</font></h3></div>
+	<div class="container">
+		<div class="skills illustrator">3.2%</div>
+	</div>
+	</div>
+</div>
+
+
+<!Projects>
+<div class="project_head" id="Projects">
+	<h1> 
+		<font color="white">Survey</font>
+	</h1>
+</div>
+<div class="Project" >
+	<div class="Dumb_assistor">
+		<div class="Name">
+			<h1><font color="White"><u>1. Meri aawaj	</u></font></h1>		
+		</div>
+		<div class="vid">
+			<video width="320px" height="240px" controls>
+				<source src="/static/177540e0b3fef06e353dd5ad7d2d9b30.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="desp">
+			<h4><font color="#3399FF"> This is dumb assistor</font></h4>	
+		</div>
+	</div>
+</div>
+</body>

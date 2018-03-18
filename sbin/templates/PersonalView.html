@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detailed View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href='/static/style.css'>
+    <link rel="stylesheet" href='/static/style2.css'>
+    <style>
+    a:hover {
+        background-color: #6f0f02;
+        text-decoration:none
+    }
+    a:link {
+        text-decoration: none;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+
+</head>
+<body class="body">
+<div style="
+        background-color: #3399FF;
+        height:100%;
+        width:30%;
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:1100px;
+        margin:auto;" >
+        <br><br><br>
+                <p style="text-align:center"><font color="#ffffff" size="8" face="verdana"> Smart </font></p>
+                <p style="text-align:center"><font color="#ffffff" size="8" face="verdana"> Dustbin </font></p>	<br><br><br>
+        <div class="select_list">
+                <p  style="text-align:right"><a href={% url "home" %}><font color="#ffffff" size="6" face="verdana"> Home </font></a></p><br>
+                <p style="text-align:right"><a href={% url "home" %}><font color="#ffffff" size="6" face="verdana"> log out
+                </font></a></p>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: #f1f1;
+    width=10px;position:fixed;top:150px;left:400px">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>{{ name }}</th>
+          </tr>
+          <tr>
+            <td>Ph.No</td>
+            <td>{{ ph }}</td>
+          </tr>
+          <tr>
+            <td>Person ID</td>
+            <td>{{ pid }}</td>
+          </tr>
+          <tr>
+          <td>Email</td>
+          <td>{{ email }}</td>
+          </tr>
+          <tr>
+            <td>Dustbin</td>
+            <td>{{ bid }}</td>
+          </tr>
+          <tr>
+            <td>Last cleaned</td>
+            <td>{{ lastC }}</td>
+          </tr>
+        </table>
+    </div>
+</body>
+</html>
