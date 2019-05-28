@@ -19,6 +19,7 @@ class Sendmess(CreateView):
             to="+919003768929",
             from_="+19193283318",
             body="Testing django twilio!")
+        print ("yo")
         return HttpResponse("Hello, world. You're at the polls index.")
     def get(self,request,*args,**kwargs):
         client.api.account.messages.create(
